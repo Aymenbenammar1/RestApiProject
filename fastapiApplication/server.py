@@ -7,13 +7,6 @@ app = FastAPI()
 
 datasets = {}
 
-#@app.get("/datasets/")
-#def create_dataset():
-#    script_directory = os.path.dirname(os.path.abspath(__file__))
-#    file_path = os.path.join(script_directory, "ressources", "sample_data_1.csv")
-#    df = pd.read_csv(file_path).T.to_dict()
-#    return JSONResponse(content=df)
-#
 
 @app.get("/datasets/")
 def list_datasets():
